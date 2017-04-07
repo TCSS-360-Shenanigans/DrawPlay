@@ -2,7 +2,8 @@
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.geom.*;
-
+ 
+//testing   
 public class Cat {
 	// CHANGES RIGHT HERE GET YOUR CHANGES
 	// drawing constants are private - noone needs to know what we're doing
