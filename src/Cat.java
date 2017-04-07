@@ -38,6 +38,9 @@ public class Cat {
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		x += EYE_SEPARATION;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
+		
+		g2.drawString("matthp9", x, y);
+		
 		// Draw the mouth
 		g2.setColor(Color.pink);
 		x = catX + MOUTH_X;
@@ -49,3 +52,4 @@ public class Cat {
 		g2.drawString("Meow", catX, catY+HEAD_DIMENSION+10);	
 	}
 }
+//THIS IS A CHANGE TEST
