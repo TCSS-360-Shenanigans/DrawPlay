@@ -24,6 +24,7 @@ public class Cat {
 	// draw will render the Cat on the Graphics object
 	public void draw(Graphics g, int catX, int catY)
 	{
+		// Here is my comment
 		Graphics2D g2 = (Graphics2D) g;
 		int x=catX;
 		int y=catY;
