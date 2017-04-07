@@ -1,9 +1,10 @@
+
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.geom.*;
 
-// Cat Class that draws a cat
 public class Cat {
+	// CHANGES RIGHT HERE GET YOUR CHANGES
 	// drawing constants are private - noone needs to know what we're doing
 	// pick a head dimension
 	private static final int HEAD_DIMENSION = 100;
@@ -24,7 +25,6 @@ public class Cat {
 	// draw will render the Cat on the Graphics object
 	public void draw(Graphics g, int catX, int catY)
 	{
-		// Here is my comment
 		Graphics2D g2 = (Graphics2D) g;
 		int x=catX;
 		int y=catY;
@@ -32,12 +32,15 @@ public class Cat {
 		g2.setColor(Color.black);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
 		// Draw the eyes
-		g2.setColor(Color.blue);
+		g2.setColor(Color.green);
 		x = catX + EYE_X; 
 		y = catY + EYE_Y;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		x += EYE_SEPARATION;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
+		
+		g2.drawString("matthp9", x, y);
+		
 		// Draw the mouth
 		g2.setColor(Color.pink);
 		x = catX + MOUTH_X;
@@ -46,7 +49,7 @@ public class Cat {
 		g2.setColor(Color.black);
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
-		g2.drawString("Meow", catX, catY+HEAD_DIMENSION+10);
-		
+		g2.drawString("Meow", catX, catY+HEAD_DIMENSION+10);	
 	}
 }
+//THIS IS A CHANGE TEST
